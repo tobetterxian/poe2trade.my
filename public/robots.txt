@@ -1,0 +1,5 @@
+User-agent: *
+Allow: / 
+
+# Sitemap location
+Sitemap: https://poe2trade.my/sitemap-index.xml

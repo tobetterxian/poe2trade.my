@@ -1,0 +1,50 @@
+---
+const faqs = [
+  {
+    question: "How does POE2 trade differ from POE1?",
+    answer: "POE2 trade introduces several improvements to the trading system, including a more streamlined currency exchange process and enhanced item trading interface. The core principles remain similar, but the user experience has been significantly improved."
+  },
+  {
+    question: "Is POE2 trade available on all platforms?",
+    answer: "POE2 trade functionality is primarily designed for PC players, with console versions having some limitations. The official trade site works across all modern web browsers."
+  },
+  {
+    question: "What are Premium Stash Tabs and why do I need them?",
+    answer: "Premium Stash Tabs are special storage tabs that allow you to list items for trade directly from your inventory. They're essential for efficient trading in POE2, providing features like price setting and public listing capabilities."
+  },
+  {
+    question: "How can I ensure safe trading in POE2?",
+    answer: "Always use the official POE2 trade site and in-game trading system. Double-check all trades before accepting, and be aware of common scam attempts. The trade window has built-in safety features to protect players."
+  },
+  {
+    question: "What's the best way to price items in POE2 trade?",
+    answer: "Use the official trade site to check similar items' prices, consider item mods and their synergies, and stay updated with the current market trends. Third-party tools can also help with price checking."
+  }
+];
+---
+
+<section id="faq" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">POE2 Trade FAQs</h2>
+    
+    <div class="max-w-3xl mx-auto space-y-6">
+      {faqs.map((faq, index) => (
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <details class="group">
+            <summary class="flex justify-between items-center cursor-pointer list-none">
+              <h3 class="text-xl font-semibold">{faq.question}</h3>
+              <span class="transition group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </summary>
+            <p class="mt-4 text-gray-600">
+              {faq.answer}
+            </p>
+          </details>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
